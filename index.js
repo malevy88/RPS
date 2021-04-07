@@ -1,3 +1,5 @@
+
+//generates 1-3 and assigns it to RPS randomly for computer
 function computerPlay() {
   let options = ["rock", "paper", "scissors"];
   let randomGenerator = Math.floor(Math.random() * 3)
@@ -5,6 +7,7 @@ function computerPlay() {
   return computerSelection;
 }
 
+//function to determine winner
 function playRound(playerSelection, computerSelection) {
   if (playerSelection === "rock" && computerSelection === "scissors") {
     return "You Win, rock beats scissors";
@@ -23,6 +26,7 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
+//makes game 5 rounds and gets user selection
 let userScore = parseInt(0);
 let computerScore = parseInt(0);
 let i = 0;
