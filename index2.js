@@ -4,17 +4,20 @@ function computerPlay() {
   let computerSelection = options[randomGenerator];
   return computerSelection;
 }
+ 
+const playerSelection = document.querySelectorAll("button");
+playerSelection.forEach((button) => {
+  button.addEventListener("click", () => {
+    alert(button.id)
+  })
+});
 
- document.getElementById("Rock").onclick = playerSelection;
- document.getElementById("Paper").onclick = playerSelection;
- document.getElementById("Scissors").onclick = playerSelection;
 
- function playerSelection(){
-   let playerChoice = this.id;
-   console.log(playerChoice)
- }
+
 
 //function to determine winner
+
+
 function playRound(playerSelection, computerSelection) {
   if (playerSelection === "Rock" && computerSelection === "scissors") {
     return "You Win, rock beats scissors";
@@ -33,17 +36,7 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
-let i = 0;
-const game = () => {
-  const computerSelection = computerPlay()
-  alert(playRound(playerSelection, computerPlay()));
-  i++;
-  if (i !== 5) {
-    game();
-  } else {
-    alert("Game Over")
-  }
-}
-game();
+
+
 
 

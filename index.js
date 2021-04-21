@@ -33,7 +33,7 @@ let i = 0;
 const game = () => {
   let playerSelection = prompt("Rock, Paper, or Scissors?").toLowerCase();
   const computerSelection = computerPlay()
-  console.log(playRound(playerSelection, computerPlay()));
+  alert(playRound(playerSelection, computerPlay()));
   i++;
   if (i !== 5) {
     game();
