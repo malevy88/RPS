@@ -4,9 +4,10 @@ function computerPlay() {
   let computerSelection = options[randomGenerator];
   return computerSelection;
 }
- 
-const playerSelection = document.querySelectorAll("button");
-playerSelection.forEach((button) => {
+
+//let playerSelection = button.id
+const playerChoice = document.querySelectorAll("button");
+playerChoice.forEach((button) => {
   button.addEventListener("click", () => {
     alert(button.id)
   })
