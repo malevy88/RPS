@@ -5,13 +5,14 @@ function computerPlay() {
   return computerSelection;
 }
 
-//let playerSelection = button.id
-const playerChoice = document.querySelectorAll("button");
-playerChoice.forEach((button) => {
-  button.addEventListener("click", () => {
-    alert(button.id)
-  })
-});
+document.getElementById('Rock').onclick = user;
+document.getElementById('Paper').onclick = user;
+document.getElementById('Scissors').onclick = user;
+function user(){
+    let userChoice = this.id;
+    alert("User: " + userChoice)
+
+
 
 
 
@@ -38,6 +39,4 @@ function playRound(playerSelection, computerSelection) {
 }
 
 
-
-
-
+}
